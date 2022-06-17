@@ -6,6 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { SharedModule } from "./shared/shared.module";
 import{Interceptor} from './shared/helper/interceptors/Interceptor'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthenticationModule } from './components/authentication/authentication.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,11 @@ import{Interceptor} from './shared/helper/interceptors/Interceptor'
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    AuthenticationModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true },

@@ -19,7 +19,7 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) { }
 
   UserRegister(data : RegisterData){
-     this.http.post(this.apiUrl+ApiRoutes.register,data).pipe(tap((response: any) => {
+  return   this.http.post(this.apiUrl+ApiRoutes.register,data).pipe(tap((response: any) => {
       if(response.status === 'success'){
         localStorage.setItem('token', response.authorisation.token);
         this.setIsLoggedIn(true);
@@ -29,7 +29,7 @@ export class AuthService {
   }
 
   UserLogin(data : LoginData){
-    this.http.post(this.apiUrl+ApiRoutes.login,data).pipe(tap((response: any) => {
+    return this.http.post(this.apiUrl+ApiRoutes.login,data).pipe(tap((response: any) => {
       if(response.status === 'success'){
         localStorage.setItem('token', response.authorisation.token);
         this.setIsLoggedIn(true);

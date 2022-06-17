@@ -16,6 +16,11 @@ import {RouterModule} from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     RouterModule
+  ],
+  exports:[
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
+
 export class AuthenticationModule { }
