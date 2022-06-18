@@ -14,6 +14,10 @@ const routes: Routes = [
         component: MoviesListComponent,
       },
       {
+        path: AppRoutes.Movies.full,
+        redirectTo: AppRoutes.Movies.sub
+      },
+      {
         path: AppRoutes.Movies.new.main,
         component: MovieFormComponent,
       },

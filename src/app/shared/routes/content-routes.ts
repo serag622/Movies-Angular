@@ -4,11 +4,11 @@ import { AppRoutes } from "../Models/app/AppRoutes";
 
 export const content: Routes = [
    {
-      path: AppRoutes.home.main,
+      path: "",
       loadChildren: () => import("../../components/movies/movies.module").then((m) => m.MoviesModule),
    },
    {
-      path: AppRoutes.Movies.main,
+      path: AppRoutes.Movies.full,
       loadChildren: () => import("../../components/movies/movies.module").then((m) => m.MoviesModule),
    },
 ];

@@ -23,7 +23,7 @@ export class AuthService {
       if(response.status === 'success'){
         localStorage.setItem('token', response.authorisation.token);
         this.setIsLoggedIn(true);
-        this.router.navigate([AppRoutes.home.full]);
+        this.router.navigate([AppRoutes.Movies.full]);
       }
     }))
   }
@@ -33,7 +33,7 @@ export class AuthService {
       if(response.status === 'success'){
         localStorage.setItem('token', response.authorisation.token);
         this.setIsLoggedIn(true);
-        this.router.navigate([AppRoutes.home.full]);
+        this.router.navigate([AppRoutes.Movies.full]);
       }
     }))
   }

@@ -5,10 +5,10 @@ export const ApiRoutes = {
 
    Movies:{
     list:'movies',
-    moviesByCategory:'moviesByCategory/{id}',
+    moviesByCategory:'moviesByCategory/',
     create:'movies',
-    update:'movies/{id}',
-    delete:'movies/{id}',
+    update:'movies/',
+    delete:'movies/',
    },
 
    category:{
