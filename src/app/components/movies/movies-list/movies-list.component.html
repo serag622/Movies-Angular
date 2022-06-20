@@ -4,18 +4,19 @@
     <div class="col-3">
       <h1>Movies List</h1>
     </div>
-    <div class="col-3">
-      <select (change)='getMoviesByCategory($event)' class="form-select" aria-label="Default select example" #SelectedCategory>
-        <option value="0" selected>All</option>
-        <option *ngFor="let c of Categories;let j = index;" [value]='c?.id' id={{c?.id}}>{{c.name}}</option>
-      </select>
+    <div class="col-3 ">
+      <a class="btn btn-success" routerLink="/new">New Movie</a>
     </div>
+  </div> 
+</div>
 
-    <a class="btn btn-success" routerLink="/new">New Movie</a>
-
-  </div>
-
-  
+<div class='row'>
+<div class='col-3 justify-content-start px-5'>
+  <select (change)='getMoviesByCategory($event)' class="form-select" aria-label="Default select example" #SelectedCategory>
+    <option value="0" selected>All</option>
+    <option *ngFor="let c of Categories;let j = index;" [value]='c?.id' id={{c?.id}}>{{c.name}}</option>
+  </select>
+</div>
 </div>
 
 <div class="row p-5  gy-3">
