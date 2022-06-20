@@ -8,6 +8,7 @@ import { SharedModule } from "./shared/shared.module";
 import{Interceptor} from './shared/helper/interceptors/Interceptor'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthenticationModule } from './components/authentication/authentication.module';
+import {MoviesModule} from './components/movies/movies.module'
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AuthenticationModule } from './components/authentication/authentication
     AppRoutingModule,
     NgbModule,
     AuthenticationModule,
+    MoviesModule,
     HttpClientModule,
     SharedModule,
     FormsModule,

@@ -3,5 +3,5 @@ export interface UpdateMovie{
   image:any;
   description: string;
   category_id: number;
-  _method : 'put';
+  _method ?: 'put';
 }

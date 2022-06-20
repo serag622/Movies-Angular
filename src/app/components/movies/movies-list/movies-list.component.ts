@@ -6,7 +6,6 @@ import {environment} from '../../../../environments/environment.prod'
 import {CategoryService} from '../../../shared/Services/Category/category.service'
 
 
-
 @Component({
   selector: 'app-movies-list',
   templateUrl: './movies-list.component.html',

@@ -9,6 +9,7 @@ export const ApiRoutes = {
     create:'movies',
     update:'movies/',
     delete:'movies/',
+    show:'movies/'
    },
 
    category:{
