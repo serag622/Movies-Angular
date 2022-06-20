@@ -39,11 +39,8 @@ export class AuthService {
   }
 
   async logout(): Promise<any> {
-    // Clear JWT from localstorage
     await localStorage.removeItem('token');
-    // Update logged in status
     this.setIsLoggedIn(false);
-    // Navigate user back to login page
     await this.router.navigate([AppRoutes.Authentication.login.full]);
   }
 

@@ -137,6 +137,8 @@ export class MovieFormComponent implements OnInit {
     console.log(event)
     this.image = event.target.files[0]
     console.log(this.image)
+
+   this.ImageFile.nativeElement.src = URL.createObjectURL(event.target.files[0])
   }
 
 

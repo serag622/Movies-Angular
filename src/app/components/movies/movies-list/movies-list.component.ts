@@ -41,7 +41,7 @@ export class MoviesListComponent implements OnInit {
   }
 
   getMoviesByCategory(e : any){
-    const id =+e.target.value
+    const id =+e.target?.value
     if(id){
       this.moviesService.getMoviesByCategory(id).subscribe((res : any)=>{
         this.MoviesArray=res.message;

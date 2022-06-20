@@ -10,11 +10,11 @@
 
     <div class="mb-3 row  align-items-center">
       <div class='col-1'>
-        <img class=' update-image ' *ngIf="isUpdate" [src]='imageUrl + selectedMovie?.image' />
+        <img class=' update-image ' #Image [src]='imageUrl + selectedMovie?.image' />
       </div>
       <div class='col-11 '>
-       <label for="exampleFormControlInput1" class="form-label">Image</label>
-       <input type="file" accept="image/*" class="form-control"  id="exampleFormControlInput1" #Image (change)="onFileChange($event)"  placeholder="">
+       <label for="exampleFormControlInput1" class="form-label">Select Image</label>
+       <input type="file" accept="image/*" class="form-control"  id="exampleFormControlInput1"  (change)="onFileChange($event)"  placeholder="">
      </div>
     </div>
   

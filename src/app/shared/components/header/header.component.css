@@ -1,0 +1,4 @@
+.home:hover{
+    transform : scale(1.5);
+    text-decoration: underline;
+}
